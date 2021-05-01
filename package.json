@@ -1,24 +1,32 @@
 {
-  "name": "automagics social network",
+  "name": "socialnetwork-main",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A social networking app for witches and wizards of all realms. ",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "the automagics",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katkava/socialnetwork-main.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katkava/socialnetwork-main/issues"
+  },
+  "homepage": "https://github.com/katkava/socialnetwork-main#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
-    "connect-mongo": "^3.2.0",
+    "connect-mongo": "^4.4.1",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-flash": "0.0.2",
     "express-session": "^1.17.1",
-    "mongodb": "^3.6.5",
-    "mongoose": "^5.12.3",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.7",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.7",
     "passport": "^0.4.1",
