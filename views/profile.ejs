@@ -1,0 +1,48 @@
+<!-- Add header time permitting -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Profile</h1>
+
+    <h2>
+      <p>Username: <%= user.userName %></p>
+       <br>
+      <p>Email: <%= user.email %></p> 
+    </h2>
+   <!--adding a post-->
+    <h3>Add a post</h3>
+    <form action="/posts/createPost" method='POST'>
+        <input type="text" placeholder="Title" name='title'>
+        <input type="text" placeholder="Caption" name='caption'>
+        <input type="file" placeholder="Add Image" name='file'>
+        <button type="submit">Submit</submit>
+    </form>
+
+    <!-- all of my images that I can see on my wall-->
+     <ul>
+    <% for(var i=0; i<posts.length; i++) {%>
+            <li class='postItem'>
+            <a href="/post/<%= posts[i]._id%>">
+                <img src="<%= posts[i].image%>" alt="Post by User">
+            </a>
+            </li>
+    <% }) %>    
+    </ul> -->
+
+    
+
+    <a href="/feed">Go back to feed</a>
+    <a href="/logout">Logout</a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+<!-- add footer time permitting-->
