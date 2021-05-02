@@ -1,0 +1,50 @@
+<!-- Add header time permitting -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Post</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1><%= post.title %></h1>
+  <br>
+  <img src="<%= post.image" alt="Post by User"/>
+  </p>
+  <form action="/post/addLike/<%= post.id %>?_method=PUT" method="POST">
+   <button type="submit">Like</button>
+  </form>
+ <h3>Likes: <%= post.likes%></h3>
+
+ <!--Code for dislikes if we want-->
+ <!-- <form action="/post/dislike/<%= post.id %>?_method=PUT" method="POST">
+  <button type="submit">Dislike</button>
+ </form>
+ <h3>Dislikes: <%= post.dislikes%>
+ </h3> -->
+ <!--Code for dislikes if we want-->
+
+ <%if(post.user == use.id) { %>
+  <form 
+  action="/post/deletePost/<%= post.id %>?_method=DELETE"
+  method="POST"
+  >
+  <button type="submit">Delete</button>
+ </form>
+ <%}%>
+ 
+ <p><%= post.caption%></p>
+ 
+ <a href="/feed">Go back to feed</a>
+ <a href="/profile">Go back to Profile</a>
+
+ <script src="js/main.js"></script>
+</body>
+
+</html>
+<!-- add footer time permitting-->
