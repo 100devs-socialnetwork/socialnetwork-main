@@ -10,7 +10,7 @@ router.post('/createPost', postsController.createPost)
 router.put('/addLike', postsController.addLike)
 
 //this was "mark incomplete" for todos; we could make this "remove like", or, could be fun to add a dislike button and have this control dislikes?
-router.put('/dislike', postsController.dislike)
+//router.put('/dislike', postsController.dislike)
 
 router.delete('/deletePost', postsController.deletePost)
 
