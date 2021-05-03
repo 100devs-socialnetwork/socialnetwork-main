@@ -14,7 +14,7 @@
 <body>
   <h1><%= post.title %></h1>
   <br>
-  <img src="<%= post.image" alt="Post by User"/>
+  <img src="<%= post.image%>" alt="Post by User"/>
   </p>
   <form action="/post/addLike/<%= post.id %>?_method=PUT" method="POST">
    <button type="submit">Like</button>

@@ -28,13 +28,13 @@
 
     <!-- all of my images that I can see on my wall-->
      <ul>
-    <% for(var i=0; i<posts.length; i++) {%>
+    <% for(let i=0; i < posts.length; i++) {%>
             <li class='postItem'>
-            <a href="/post/<%= posts[i]._id%>">
-                <img src="<%= posts[i].image%>" alt="Post by User">
+            <a href="/post/<%= posts[i]._id %>">
+                <img src="<%= posts[i].image %>" alt="Post by User">
             </a>
             </li>
-    <% }) %>    
+    <% } %>    
     </ul> -->
 
     
