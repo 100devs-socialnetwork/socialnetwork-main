@@ -17,6 +17,7 @@ router.delete('/deletePost', postsController.deletePost)
 module.exports = router
 
 
+
 //----------------NOTE------------------------------------
 //  the above is my edited code from todo-local-auth; below is JOHN'S CODE...
 //  which is almost the same except it uses the unique :id path for posts. Once we get our posts set up with ID's we should switch to JOHN'S CODE...
