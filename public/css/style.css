@@ -1,13 +1,16 @@
-h1 {
-  color: red;
-  text-align: center;
-  margin: 100px;
-  line-height: 1.8;
+body {
+  background: lightgray;
 }
-.completed {
-  text-decoration: line-through;
+
+h1 {
+  color: white;
+}
+
+span {
   color: gray;
 }
-.not {
-  text-decoration: underline;
+
+a {
+  text-decoration: none;
+  color: white;
 }
