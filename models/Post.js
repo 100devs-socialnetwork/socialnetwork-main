@@ -15,11 +15,11 @@ const PostSchema = new mongoose.Schema({
   // },
   caption: {
     type: String,
-    // required: true,
+    required: true,
   },
   likes: {
     type: Number,
-    // required: true,
+    required: true,
   },
   user: {
     type: mongoose.Schema.Types.ObjectId,
