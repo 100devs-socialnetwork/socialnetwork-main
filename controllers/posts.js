@@ -18,7 +18,7 @@ module.exports = {
       console.log(err);
     }
   },
-  getPosts: async (req, res) => {
+  getPost: async (req, res) => {
     console.log(req.user);
     try {
       const post = await Post.find({ userId: req.user.id });
@@ -38,12 +38,12 @@ module.exports = {
         user: req.user.id,
       });
       console.log("Post has been added!");
-      res.redirect("/post");
+      res.redirect("/profile");
     } catch (err) {
       console.log(err);
     }
   },
-  addLike: async (req, res) => {
+  likePost: async (req, res) => {
     try {
       await Post.findOneAndUpdate(
         { _id: req.body.postIdFromJSFile },
