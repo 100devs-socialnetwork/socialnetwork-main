@@ -9,6 +9,10 @@ header {
   margin-bottom: 50px;
 }
 
+footer {
+  height: 100px;
+}
+
 h1 {
   font-size: 3rem;
   color: white;
@@ -51,6 +55,13 @@ a:hover {
     font-weight: 500;
   }
 
+.feedTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .postForm {
   text-align: left;
 }
@@ -74,6 +85,15 @@ a:hover {
   align-items: center;
 }
 
+.postControls {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+  .postControls form {
+    width: 100%;
+  }
+
 .btn {
   color: white;
   background: black;
@@ -83,6 +103,15 @@ a:hover {
   overflow: hidden;
   align-self: center;
 }
+  .btn h5 {
+    font-size: 1rem;
+    font-family: 'Princess Sofia', cursive;
+  }
+
+  .btn i {
+    font-size: 1.3rem;
+    padding-right: 5px;
+  }
 
   .btn:hover {
     color: rgb(234,86,247);
@@ -111,4 +140,13 @@ a:hover {
 
 .btn2 h4{
   font-size: 1.2rem;
+}
+
+.btnAlt {
+  font-family: 'Princess Sofia', cursive;
+  font-size: 1.2rem;
+  color: black;
+  background: white;
+  border-radius: 5%;
+  height: 2.5rem;
 }
