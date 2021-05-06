@@ -1,48 +1,34 @@
 
-<!DOCTYPE html>
-<html lang="en">
+<%- include('partials/header') -%>
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-6">
+      <h2><%= post.title %></h2>
+      <img class="img-fluid" src="<%= post.image%>" />
+      <div class="row justify-content-between">
+        <form
+          class="col-1"
+          action="/post/likePost/<%= post.id %>?_method=PUT"
+          method="POST"
+        >
+          <button type="submit"><i class="fas fa-magic"></i></button><span class="row-3">Likes: <%= post.likes %></span>
+        </form>
+        <%if(post.user == user.id){ %>
+        <form
+          action="/post/deletePost/<%= post.id %>?_method=DELETE" method="POST" class="col-3">
+          <button type="submit"><i class="fas fa-skull-crossbones"></i></button>
+        </form>
+        <%}%>
+      </div>
+    </div>
+    <div class="col-3 mt-5">
+      <p><%= post.caption %></p>
+    </div>
+    <div class="col-6 mt-5">
+      <a class="" href="/profile">back to Profile</a>
+      <a class="" href="/feed">back to Feed</a>
+    </div>
+  </div>
+</div>
 
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Post</title>
- <link rel="stylesheet" href="/css/style.css">
-</head>
-
-<body>
-  <h1><%= post.title %></h1>
-  <br>
-  <a href="<%= post.title%>"/>
-  </p>
-  <form action="/post/addLike/<%= post.id %>?_method=PUT" method="POST">
-   <button type="submit">Like</button>
-  </form>
- <h3>Likes: <%= post.likes%></h3>
-
- <!--Code for dislikes if we want-->
- <!-- <form action="/post/dislike/<%= post.id %>?_method=PUT" method="POST">
-  <button type="submit">Dislike</button>
- </form>
- <h3>Dislikes: <%= post.dislikes%>
- </h3> -->
- <!--Code for dislikes if we want-->
-
- <%if(post.user == user.id) { %>
-  <form 
-  action="/post/deletePost/<%= post.id %>?_method=DELETE"
-  method="POST"
-  >
-  <button type="submit">Delete</button>
- </form>
- <%}%>
- 
- <p><%= post.caption%></p>
- 
- <a href="/feed">Go back to feed</a>
- <a href="/profile">Go back to Profile</a>
-
- <!-- <script src="js/main.js"></script> -->
-</body>
-
-</html>
+<%- include('partials/footer') -%>

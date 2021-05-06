@@ -1,83 +1,52 @@
-<!-- Add header time permitting -->
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Post</title>
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-
-<body>
+<%- include('./partials/header.ejs'); -%>
 <div class="container">
-    <h1>Profile</h1>
-    <h2>
-      <p>Username: <%= user.userName %></p>
-       <br>
-      <p>Email: <%= user.email %></p> 
-    </h2>
+    
 
-    <div class="mt-5">
-        <h2>Add a post</h2>
+    <div class="postForm mt-5">
+      <h1>My Profile</h1>
+      <h2><p>Hello <%= user.userName %></p></h2>
+        <h3>Speak Your Spell:</h3>
         <form action="/post/createPost" enctype="multipart/form-data" method="POST">
           <div class="mb-3">
               <label for="title" class="form-label">Title</label>
               <input type="text" class="form-control" id="title" name="title">
           </div>
           <div class="mb-3">
-            <label for="caption" class="form-label">Caption</label>
+            <label for="caption" class="form-label">The Tea</label>
             <textarea class="form-control" id="caption" name="caption"></textarea>
           </div>
           <div class="mb-3">
             <label for="imgUpload" class="form-label">Image</label>
             <input type="file" class="form-control" id="imageUpload" name="file">
           </div>
-          <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+          <div class="buttons">
+            <div class="buttonContainer">
+                <button type="submit" class="btn effect01" value="Upload"><h4>abracadabra</h4></button>
+            </div>
+          </div>
+          
         </form>
       </div>
-   <!-- adding a post
-    <h3>Add a post</h3>
-    <form action="/post/createPost" method='POST'>
-        <input type="text" placeholder="Title" name='title'>
-        <input type="text" placeholder="Caption" name='caption'>
-        <input type="file" placeholder="Add Image" name='filename'>
-        <button type="submit">Submit</button>
-    </form> -->
+   <!-- adding a post -->
 
     <!-- all of my images that I can see on my wall-->
-    <ul>
-    <% for(var i=0; i < posts.length; i++) {%>
-            <li class='postItem'>
-            <a href="/post/<%= posts[i]._id%>">
-                <img src="<%= posts[i].image %>" alt="Post by User">
-                <span> <%= posts[i].title %> </span>
-            </a>
-            </li>
-    <% } %>    
-    </ul>
+    <div class="col-10">
+      <ul class="row list-unstyled">
+        <% for(var i=0; i < posts.length; i++) {%>
+                <li class="postItem col-10 justify-content-between mt-5">
+                <a href="/post/<%= posts[i]._id%>">
+                    <img class="img-fluid" src="<%= posts[i].image %>" alt="Post by User">
+                    <span> <%= posts[i].title %> </span>
+                </a>
+                </li>
+        <% } %>    
+        </ul>
+    </div>
+    
 
     <a href="/feed">Go back to feed</a>
     <a href="/logout">Logout</a>
-<!-- 
-    <div class="col-6">
-        <ul class="row list-unstyled">
-        <% for(var i=0; i < posts.length; i++) {%>
-          <li class="col-6 justify-content-between mt-5">
-            <a href="/post/<%= posts[i]._id%>">
-                <span> <%= posts[i].title %> </span>
-              <img class="img-fluid" src="<%= posts[i].image%>">
-            </a>
-          </li>
-        <% } %>
-        </ul>
-        <div class="row justify-content-center mt-5">
-          <a class="btn btn-primary" href="/feed">Return to Feed</a>
-        </div>  
-      </div>   -->
-</div>
-    
-</body>
 
-</html>
+</div>
+
+<%- include('./partials/footer.ejs'); -%>
