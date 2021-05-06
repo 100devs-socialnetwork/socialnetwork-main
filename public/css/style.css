@@ -1,11 +1,31 @@
 body {
   background: lightgray;
+  padding: 0 20%;
+  text-align: center;
+}
+
+header {
+  padding: 100px 0 0 0;
+  margin-bottom: 50px;
 }
 
 h1 {
+  font-size: 3rem;
   color: white;
+  font-family: 'Princess Sofia', cursive;
+}
+h1:hover {
+  color: black;
+  text-shadow: 2px 2px 3px blue, 0 0 1em rgb(170,0,170), 0 0 1em rgb(134,209,1), 0 0 0.2em rgb(170,0,170);
+  font-weight: 500;
 }
 
+h4 {
+  font-size: 2.2rem;
+  font-family: 'Princess Sofia', cursive;
+  margin-bottom: 0px;
+  padding: 0px 7px;
+}
 span {
   color: gray;
 }
@@ -13,4 +33,82 @@ span {
 a {
   text-decoration: none;
   color: white;
+}
+
+a:hover {
+  font-weight: 500;
+  color: rgb(170,0,170);
+}
+
+.titleHeader {
+  font-size: 5rem;
+  color:black;
+  font-family: 'Princess Sofia', cursive;
+}
+  .titleHeader:hover {
+    color: black;
+    text-shadow: 2px 2px 3px rgb(234,86,247), 0 0 1em blue, 0 0 0.2em blue,0 0 0.2em rgb(170,0,170);
+    font-weight: 500;
+  }
+
+.postForm {
+  text-align: left;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+  .formContainer div {
+    display:flex;
+    justify-content: center;
+  }
+
+/* fancy buttons */
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  color: white;
+  background: black;
+  text-decoration: none;
+  border: 1px solid rgb(146, 148, 248);
+  position: relative;
+  overflow: hidden;
+  align-self: center;
+}
+
+  .btn:hover {
+    color: rgb(234,86,247);
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+  }
+
+    .btn:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(146, 148, 248, 0.4),
+        transparent
+      );
+      transition: all 650ms;
+    }
+
+      .btn:hover:before {
+        left: 100%;
+      }
+
+.btn2 h4{
+  font-size: 1.2rem;
 }
