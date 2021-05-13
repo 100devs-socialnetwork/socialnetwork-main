@@ -176,11 +176,8 @@ a:hover {
   margin: 0px 6px;
   padding: 0px 20px;
 }
-.hidden {
-  display: none;
-}
 
-body a:hover,
+a:hover,
 .btn:hover,
 .titleHeader:hover {
   cursor: url("https://img.icons8.com/office/40/000000/bright-moon.png"), auto;
