@@ -30,10 +30,10 @@
    <!-- adding a post -->
 
     <!-- all of my images that I can see on my wall-->
-    <div class="col-10">
+    <div class="row-6 align-content-center">
       <ul class="row list-unstyled">
         <% for(var i=0; i < posts.length; i++) {%>
-                <li class="postItem col-10 justify-content-between mt-5">
+                <li class="col-6 justify-content-between mt-5">
                 <a href="/post/<%= posts[i]._id%>">
                     <img class="img-fluid" src="<%= posts[i].image %>" alt="Post by User">
                     <span> <%= posts[i].title %> </span>

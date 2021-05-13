@@ -1,6 +1,6 @@
 body {
   background: lightgray;
-  padding: 0 20%;
+  padding: 0 15%;
   text-align: center;
 }
 
@@ -8,13 +8,20 @@ header {
   padding: 100px 0 0 0;
   margin-bottom: 50px;
 }
+  header a {
+    font-size: 1.5rem;
+  }
+
+  header ul {
+    margin: 0px 5%;
+  }
 
 footer {
   height: 100px;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   color: white;
   font-family: 'Princess Sofia', cursive;
 }
@@ -45,7 +52,7 @@ a:hover {
 }
 
 .titleHeader {
-  font-size: 5rem;
+  font-size: 9rem;
   color:black;
   font-family: 'Princess Sofia', cursive;
 }
@@ -55,12 +62,27 @@ a:hover {
     font-weight: 500;
   }
 
+.titleSub {
+  font-size: 2rem;
+}
+
 .feedTitle {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
+
+.postTitle {
+  color: rgb(170,0,170);
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+  .postTitle h5 {
+    color: gray;
+  }
 
 .postForm {
   text-align: left;
@@ -144,9 +166,11 @@ a:hover {
 
 .btnAlt {
   font-family: 'Princess Sofia', cursive;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   color: black;
   background: white;
   border-radius: 5%;
-  height: 2.5rem;
+  height: 2.8rem;
+  margin: 0px 6px;
+  padding: 0px 20px;
 }
