@@ -8,13 +8,13 @@ header {
   padding: 100px 0 0 0;
   margin-bottom: 50px;
 }
-  header a {
-    font-size: 1.5rem;
-  }
+header a {
+  font-size: 1.5rem;
+}
 
-  header ul {
-    margin: 0px 5%;
-  }
+header ul {
+  margin: 0px 5%;
+}
 
 footer {
   height: 100px;
@@ -23,17 +23,18 @@ footer {
 h1 {
   font-size: 5rem;
   color: white;
-  font-family: 'Princess Sofia', cursive;
+  font-family: "Princess Sofia", cursive;
 }
 h1:hover {
   color: black;
-  text-shadow: 2px 2px 3px blue, 0 0 1em rgb(170,0,170), 0 0 1em rgb(134,209,1), 0 0 0.2em rgb(170,0,170);
+  text-shadow: 2px 2px 3px blue, 0 0 1em rgb(170, 0, 170),
+    0 0 1em rgb(134, 209, 1), 0 0 0.2em rgb(170, 0, 170);
   font-weight: 500;
 }
 
 h4 {
   font-size: 2.2rem;
-  font-family: 'Princess Sofia', cursive;
+  font-family: "Princess Sofia", cursive;
   margin-bottom: 0px;
   padding: 0px 7px;
 }
@@ -48,19 +49,20 @@ a {
 
 a:hover {
   font-weight: 500;
-  color: rgb(170,0,170);
+  color: rgb(170, 0, 170);
 }
 
 .titleHeader {
   font-size: 9rem;
-  color:black;
-  font-family: 'Princess Sofia', cursive;
+  color: black;
+  font-family: "Princess Sofia", cursive;
 }
-  .titleHeader:hover {
-    color: black;
-    text-shadow: 2px 2px 3px rgb(234,86,247), 0 0 1em blue, 0 0 0.2em blue,0 0 0.2em rgb(170,0,170);
-    font-weight: 500;
-  }
+.titleHeader:hover {
+  color: black;
+  text-shadow: 2px 2px 3px rgb(234, 86, 247), 0 0 1em blue, 0 0 0.2em blue,
+    0 0 0.2em rgb(170, 0, 170);
+  font-weight: 500;
+}
 
 .titleSub {
   font-size: 2rem;
@@ -74,15 +76,15 @@ a:hover {
 }
 
 .postTitle {
-  color: rgb(170,0,170);
+  color: rgb(170, 0, 170);
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
 }
-  .postTitle h5 {
-    color: gray;
-  }
+.postTitle h5 {
+  color: gray;
+}
 
 .postForm {
   text-align: left;
@@ -94,10 +96,10 @@ a:hover {
   align-content: center;
   justify-content: center;
 }
-  .formContainer div {
-    display:flex;
-    justify-content: center;
-  }
+.formContainer div {
+  display: flex;
+  justify-content: center;
+}
 
 /* fancy buttons */
 
@@ -112,11 +114,12 @@ a:hover {
   justify-content: space-evenly;
   align-content: center;
 }
-  .postControls form {
-    width: 100%;
-  }
+.postControls form {
+  width: 100%;
+}
 
 .btn {
+  height: 40px;
   color: white;
   background: black;
   text-decoration: none;
@@ -125,52 +128,103 @@ a:hover {
   overflow: hidden;
   align-self: center;
 }
-  .btn h5 {
-    font-size: 1rem;
-    font-family: 'Princess Sofia', cursive;
-  }
+.btn h5 {
+  font-size: 1rem;
+  font-family: "Princess Sofia", cursive;
+}
 
-  .btn i {
-    font-size: 1.3rem;
-    padding-right: 5px;
-  }
+.btn i {
+  font-size: 1.3rem;
+  padding-right: 5px;
+}
 
-  .btn:hover {
-    color: rgb(234,86,247);
-    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
-  }
+.btn:hover {
+  color: rgb(234, 86, 247);
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
 
-    .btn:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(146, 148, 248, 0.4),
-        transparent
-      );
-      transition: all 650ms;
-    }
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(146, 148, 248, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
 
-      .btn:hover:before {
-        left: 100%;
-      }
+.btn:hover:before {
+  left: 100%;
+}
 
-.btn2 h4{
+.btn2 h4 {
   font-size: 1.2rem;
 }
 
 .btnAlt {
-  font-family: 'Princess Sofia', cursive;
+  font-family: "Princess Sofia", cursive;
   font-size: 1.7rem;
   color: black;
   background: white;
   border-radius: 5%;
   height: 2.8rem;
-  margin: 0px 6px;
+  margin: 15px 20%;
   padding: 0px 20px;
+  width: 50%;
+}
+
+.card {
+  margin-left: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 70%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.post-title_container {
+  padding: 5px 30px;
+}
+.post-title {
+  text-shadow: mediumvioletred;
+}
+
+.post-caption {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.feed-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  max-width: 800px;
+  max-height: 400px;
+}
+
+.feed-posts_collection {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 70%;
+}
+.feed-posts_collection:hover {
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.feed-postTitle {
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: rgb(170, 0, 170);
 }

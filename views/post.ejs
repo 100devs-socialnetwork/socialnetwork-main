@@ -1,31 +1,44 @@
-
 <%- include('partials/header') -%>
 <div class="container">
   <div class="row justify-content-center mt-5">
     <div class="col-6">
-      <h2><%= post.title %></h2>
-      <img class="img-fluid" src="<%= post.image%>" />
+      <div class="card">
+        <div class="post-title_container">
+          <h2 class="post-title"><%= post.title %></h2>
+        </div>
+        <img class="img-fluid" style="width: 100%" src="<%= post.image%>" />
+        <div class="w-33 p-2">
+          <span>likes: <%= post.likes %></span>
+        </div>
+      </div>
       <div class="postControls">
         <div class="w-33 p-1">
-          <form action="/post/likePost/<%= post.id %>?_method=PUT" method="POST">
-            <button class="btn" type="submit"><h5><i class="fas fa-magic"></i>like</h5></button>
+          <form
+            action="/post/likePost/<%= post.id %>?_method=PUT"
+            method="POST"
+          >
+            <button class="btn" type="submit">
+              <h5><i class="fas fa-magic"></i>like</h5>
+            </button>
           </form>
-        </div>
-        <div class="w-33 p-1">
-          <span>likes: <%= post.likes %></span>
         </div>
 
         <div class="w-33 p-1">
           <%if(post.user == user.id){ %>
-            <form action="/post/deletePost/<%= post.id %>?_method=DELETE" method="POST" class="col-3">
-              <button class="btn" type="submit"><h5><i class="fas fa-skull-crossbones"></i>delete</h5></button>
-            </form>
-            <%}%>
-        </div>      
-        
+          <form
+            action="/post/deletePost/<%= post.id %>?_method=DELETE"
+            method="POST"
+            class="col-3"
+          >
+            <button class="btn" type="submit">
+              <h5><i class="fas fa-skull-crossbones"></i>delete</h5>
+            </button>
+          </form>
+          <%}%>
+        </div>
       </div>
     </div>
-    <div class="col-3 mt-5">
+    <div class="col-3 mt-2 post-caption">
       <p><%= post.caption %></p>
     </div>
     <div class="row-6 mt-5">
