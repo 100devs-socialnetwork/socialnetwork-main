@@ -1,5 +1,6 @@
 body {
-  background: lightgray;
+  background-image: url("https://images.pexels.com/photos/2832441/pexels-photo-2832441.png?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size: cover;
   padding: 0 15%;
   text-align: center;
 }
@@ -39,7 +40,8 @@ h4 {
   padding: 0px 7px;
 }
 span {
-  color: gray;
+  color: rgb(2, 0, 2);
+  opacity: 0.5;
 }
 
 a {
@@ -178,7 +180,10 @@ a:hover {
 }
 
 a:hover,
-.btn:hover,
-.titleHeader:hover {
+.btn:hover {
   cursor: url("https://img.icons8.com/office/40/000000/bright-moon.png"), auto;
+}
+
+.hidden {
+  display: none;
 }
