@@ -1,12 +1,16 @@
 # Introduction
 
-We built out a social network app using the MVC Architecture, with profiles, the ability to post, like, and delete, and a feed. Our goal was to build a node app with some complex features.
+We built out a social network app using the MVC Architecture, with user profiles, the ability to create posts, add likes and delete, and a feed. Our goal was to build a node app with some complex features.
+
+> Note: The project is still in the early stages of development. We will be working on adding more
+> styles, implementing new features and more good stuff.
 
 ---
 
 # Packages/Dependencies used
 
-connect-mongo, dotenv, ejs, express, express-session, mongodb, mongoose, morgan, nodemon, passport, passport-local
+> bcrypt, cloudinary, connect-mongo, dotenv, ejs, express, express-flash, express-session, method-override, mongodb, mongoose, morgan, multer, nodemon, passport, passport-local,
+> validator
 
 ---
 
