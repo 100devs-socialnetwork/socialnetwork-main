@@ -33,6 +33,11 @@ h1:hover {
   font-weight: 500;
 }
 
+.loginSplash {
+  font-size: 5rem;
+  color: rgb(98, 97, 97);
+}
+
 h4 {
   font-size: 2.2rem;
   font-family: "Princess Sofia", cursive;
@@ -40,8 +45,9 @@ h4 {
   padding: 0px 7px;
 }
 span {
+  font-size: 1.2rem;
   color: rgb(2, 0, 2);
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 a {
@@ -186,4 +192,55 @@ a:hover,
 
 .hidden {
   display: none;
+}
+
+.card {
+  margin-left: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 70%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.post-title_container {
+  padding: 5px 30px;
+}
+.post-title {
+  text-shadow: mediumvioletred;
+}
+
+.post-caption {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.feed-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  /* max-width: 800px; */
+  /* max-height: 400px; */
+}
+
+.feed-posts_collection {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  /* width: 70%; */
+}
+
+.feed-posts_collection:hover {
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.feed-postTitle {
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: rgb(170, 0, 170);
 }
