@@ -244,3 +244,20 @@ a:hover,
   text-transform: capitalize;
   text-shadow: rgb(170, 0, 170);
 }
+
+@media only screen and (max-width: 600px) {
+  .titleHeader {
+    font-size: 5em;
+  }
+  span.titleSub {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .nav-link {
+    font-size: 1.3em;
+  }
+}
