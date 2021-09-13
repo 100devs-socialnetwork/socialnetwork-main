@@ -1,6 +1,10 @@
-# Introduction
+# Magik Tea - The Automagics Social Network
 
-We built out a social network app using the MVC Architecture, with user profiles, the ability to create posts, add likes and delete, and a feed. Our goal was to build a node app with some complex features.
+![Magik Tea](https://res.cloudinary.com/https-kieraniyer-dev-netlify-app/image/upload/v1631573183/Me/magic-network_mna6os.png)
+
+[Live-version:](https://glacial-reaches-37520.herokuapp.com/)
+
+ We built out a social network app using the MVC Architecture, with user profiles, the ability to create posts, add likes and delete, and a feed. Our goal was to build a node app with some complex features.
 
 > Note: The project is still in the early stages of development. We will be working on adding more
 > styles, implementing new features and more good stuff.
